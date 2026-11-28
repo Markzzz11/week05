@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>สมัครเข้าร่วมอบรม</title>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <td>รหัสนักศึกษา</td>
-            <td>ชื่อ</td>
-            <td>นามสกุล</td>
-        </tr>
-        <td>69143827</td>
-        <td>ณัชพล</td>
-        <td>ฉวีรัมย์</td>
-    </table>
+    <form action="login.php" method="get">
+        <h1> สมัครอบรมเข้าร่วม </h1>
+        ชื่อ : <input type="text" name="user" id="user" required><br>
+       <label for="email">อีเมล</label>
+<input type="email" id="email" name="email" required><br>
+เบอร์โทรศัพท์ : <input type="text" name="user" id="user" required><br>
+        รอบอบรม : 
+        <input type="radio" name="choose" id="valre=0">เช้า
+        <input type="radio" name="choose" id="vaue=1">บ่าย<br>
+        
+        วันที่ : <input type="date" name="day" id="day"required> <br>
+        <label> <input type="checkbox" name=" topics" value="ประโยชน์ของ Hardware"> ประโยชน์ของ Hardware</label>
+        <label> <input type="checkbox" name=" topics" value="ฐานข้อมูล"> ฐานข้อมูล</label>
+        <label> <input type="checkbox" name=" topics" value="การประกอบและดูแลรักษาคอมพิวเตอร์"> การประกอบและดูแลรักษาคอมพิวเตอร์</label><br>
+
+
+        <label for="comment">ความคิดเห็น</label>
+<textarea id="comment" name="comment" rows="3"></textarea><br>
+
+        <input type="submit" value="ส่งข้อมูล">
+        <input type="reset" value="ล้างข้อมูล">
+    </form>
 </body>
 </html>
